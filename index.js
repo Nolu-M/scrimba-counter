@@ -1,11 +1,20 @@
-//document.getElementById("count").innerText = 5
-
-//change  the count-el in the html to reflect the new count
-
+let countEl = document.getElementById("count-el")
 let count = 0
 
 function increment() {
-    console.log("clicked")
-    count = count + 1
+    count += 1
+    countEl.innertext = count
+}
+
+function save() {
+    console.log(count)
+}
+
+let saveEl = document.getElementById("save-el")
+
+function save(){
+    let countStr = count + " - "
+    
+    saveEl.innerText += countStr
     console.log(count)
 }
