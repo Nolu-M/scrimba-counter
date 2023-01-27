@@ -3,7 +3,7 @@ let count = 0
 
 function increment() {
     count += 1
-    countEl.innertext = count
+    countEl.innerText = count
 }
 
 function save() {
@@ -15,6 +15,7 @@ let saveEl = document.getElementById("save-el")
 function save(){
     let countStr = count + " - "
     
-    saveEl.innerText += countStr
-    console.log(count)
+    saveEl.textContent += countStr
+    countEl.textContent = 0
+    count = 0
 }
